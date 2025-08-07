@@ -25,7 +25,7 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @PostMapping
+    @PostMapping("/save")
     public User createUser(@RequestBody UserDTO userDTO) {
         return userService.save(userDTO);
     }
